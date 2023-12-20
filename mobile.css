@@ -4,6 +4,7 @@
 }
 body {
   /* width: 100vh; */
+  background-color: rgb(250, 250, 250);
   font-family: "Public Sans";
   font-size: 18px;
   /* overflow-x: hidden; */
@@ -178,11 +179,13 @@ a {
   padding-right: 1.5em;
   padding-left: 1.5em;
   background-color: rgb(250, 250, 250);
+  /* background-color: black; */
   color: hsl(233, 8%, 62%);
   .money,
   .restaurant,
   .flight,
   .celebrations {
+    /* background-color: yellow; */
     a {
       color: darkslategrey;
     }
@@ -215,12 +218,15 @@ a {
     }
     #normal {
       background-color: white;
-
+      margin-top: -0.1em;
+      padding-top: 0.2em;
       color: hsl(233, 8%, 62%);
       padding-left: 1.5rem;
       padding-right: 1.3rem;
+      margin-bottom: 1em;
       text-align: left;
       font-size: 0.9em;
+      padding-bottom: 1em;
     }
 
     padding-bottom: 0.5em;
