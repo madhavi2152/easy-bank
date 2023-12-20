@@ -6,7 +6,7 @@ body {
   /* width: 100vh; */
   font-family: "Public Sans";
   font-size: 18px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 a {
   text-decoration: none;
@@ -163,7 +163,8 @@ a {
     margin-top: 1.5em;
     height: 5em;
     background-size: 4em;
-    transform: translateX(40%);
+    margin-left: 35%;
+    /* transform: translateX(40%); */
     background-repeat: no-repeat;
     border-bottom: 0;
   }
@@ -545,7 +546,6 @@ a {
     justify-content: space-around;
     .outer-div-1 {
       transform: translateX(-5em);
-
       text-align: left;
       width: 50%;
       display: flex;
@@ -566,7 +566,7 @@ a {
         transform: translateX(-23%);
       }
       .closing-statement {
-        transform: translateX(-33%);
+        transform: translateX(-20%);
       }
       transform: translateY(10%);
     }
