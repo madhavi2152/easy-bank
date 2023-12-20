@@ -36,6 +36,19 @@ a {
     right: 10%;
     top: 1.5em;
   }
+
+  .into {
+    display: none;
+    background: url("./images/icon-close.svg");
+    background-size: 0.9em;
+    height: 35%;
+    width: 1em;
+    position: absolute;
+    right: 10%;
+    top: 1.5em;
+    background-repeat: no-repeat;
+  }
+
   .menu {
     height: 18rem;
     padding-top: 2em;
@@ -67,8 +80,8 @@ a {
   }
   #check {
     position: absolute;
-    right: 10%;
-    bottom: 35%;
+    right: 11%;
+    bottom: 34%;
     opacity: 0;
   }
   .option:hover {
@@ -78,6 +91,17 @@ a {
     display: inline-block;
     box-shadow: 0rem 5rem 5rem 1rem hsl(233, 26%, 24%);
   }
+  #check:checked ~ .btn .into {
+    display: block;
+  }
+  #check:checked ~ .btn .option {
+    display: none;
+  }
+  /* #check:checked {
+    .option {
+      background: url("./images/icon-close.svg");
+    }
+  } */
 }
 .intro {
   height: 20em;
@@ -213,7 +237,7 @@ a {
       background-color: white;
       padding-left: 1.5rem;
       padding-right: 1.3rem;
-      font-size: 1.2em;
+      font-size: 1em;
       padding-bottom: 0.3em;
     }
     #normal {
@@ -225,7 +249,7 @@ a {
       padding-right: 1.3rem;
       margin-bottom: 1em;
       text-align: left;
-      font-size: 0.9em;
+      font-size: 0.78em;
       padding-bottom: 1em;
     }
 
