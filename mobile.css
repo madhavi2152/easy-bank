@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
+  /* width: 100vh; */
   font-family: "Public Sans";
   font-size: 18px;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -10,7 +16,6 @@ a {
     display: none;
   }
   height: 3em;
-  width: 100%;
   position: relative;
   .fig {
     position: absolute;
@@ -75,12 +80,13 @@ a {
 }
 .intro {
   height: 20em;
-  width: auto;
+  /* width: auto; */
   background: url("./images/image-mockups.png"),
     url("./images/bg-intro-mobile.svg");
   background-size: 100%, 100%;
-  background-position-y: -3rem, -1rem;
+  background-position-y: -10.5rem, -1rem;
   background-repeat: no-repeat;
+  /* position: fixed; */
 }
 .invite {
   color: white;
@@ -94,6 +100,7 @@ a {
   padding-top: 0.5em;
 }
 .para1 {
+  font-size: 1.25em;
   padding-top: 4rem;
   padding-left: 1em;
   padding-right: 1em;
@@ -109,7 +116,7 @@ a {
   margin-top: 3%;
   padding-left: 2em;
   padding-right: 2em;
-  color: darkslategrey;
+  color: gray;
   text-align: center;
   font-size: 0.7em;
   padding-bottom: 2em;
@@ -117,6 +124,8 @@ a {
 }
 
 .why {
+  font-size: 1.3em;
+  line-height: 2.5em;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -154,21 +163,20 @@ a {
     margin-top: 1.5em;
     height: 5em;
     background-size: 4em;
-    margin-left: 43%;
-    margin-right: 33%;
+    transform: translateX(40%);
     background-repeat: no-repeat;
     border-bottom: 0;
   }
 }
 .txt {
-  margin-top: -0.6em;
   padding-bottom: 1em;
   color: darkslategrey;
 }
 .latest-articles {
   padding-top: 5rem;
-  padding-right: 1.9em;
-  padding-left: 1.9em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  background-color: rgb(250, 250, 250);
   color: hsl(233, 8%, 62%);
   .money,
   .restaurant,
@@ -178,10 +186,13 @@ a {
       color: darkslategrey;
     }
     .fig {
+      background-color: white;
       padding-bottom: 1em;
       font-size: 1em;
       .article-image {
-        width: auto;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        /* width: auto; */
         /* padding-top: 2em; */
         padding-bottom: 1em;
         width: 100%;
@@ -189,23 +200,26 @@ a {
       }
       .cap {
         padding-left: 1.55rem;
-        font-size: 0.6em;
+        font-size: 0.8em;
         padding-bottom: 0.5em;
       }
     }
 
     .txt {
+      background-color: white;
       padding-left: 1.5rem;
       padding-right: 1.3rem;
-      font-size: 0.86em;
-      padding-bottom: 0.2em;
+      font-size: 1.2em;
+      padding-bottom: 0.3em;
     }
     #normal {
+      background-color: white;
+
       color: hsl(233, 8%, 62%);
       padding-left: 1.5rem;
       padding-right: 1.3rem;
       text-align: left;
-      font-size: 0.66em;
+      font-size: 0.9em;
     }
 
     padding-bottom: 0.5em;
@@ -213,6 +227,7 @@ a {
 }
 
 .closing {
+  padding-top: 2em;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -220,7 +235,7 @@ a {
   justify-content: center;
   background: hsl(233, 26%, 24%);
   text-align: center;
-  font-size: 0.7em;
+  font-size: 1em;
   a {
     color: white;
   }
@@ -228,7 +243,6 @@ a {
 
 .closing .outer-div-1 .div1 {
   height: 100px;
-  width: 200px;
   margin-top: 1rem;
   align-self: flex-start;
 }
@@ -238,11 +252,12 @@ a {
   background-size: 90%;
   background-repeat: no-repeat;
   height: 1.3rem;
-  width: 9.5rem;
+  padding-bottom: 1em;
 }
 .closing .outer-div-1 .div1 .social-media {
+  /* border: solid white; */
   margin-top: 1em;
-  margin-left: 1.4rem;
+  margin-left: 0.7rem;
   display: flex;
   p {
     display: none;
@@ -285,14 +300,12 @@ a {
   }
 
   height: 1.3rem;
-  width: 10rem;
 }
 .closing .outer-div-2 {
   .div4 {
     .invitee {
       color: white;
       height: 1.5em;
-      width: 10em;
       background: linear-gradient(
         to right,
         hsl(192, 70%, 51%),
@@ -322,13 +335,23 @@ a {
 }
 
 @media all and (min-width: 1020px) {
+  body {
+    background-color: rgb(250, 250, 250);
+  }
+  #normal {
+    font-size: medium;
+    color: gray;
+  }
+
   .invite:hover,
   .invitee:hover {
     opacity: 80%;
     cursor: pointer;
   }
   .top .menu {
-    padding-top: 0em;
+    height: 1em;
+    font-size: 18px;
+    padding-top: 0.5em;
     position: absolute;
     z-index: 0;
     top: 0em;
@@ -360,6 +383,9 @@ a {
     }
   }
   .top {
+    background-color: white;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
     .fig {
       z-index: 2;
     }
@@ -385,12 +411,13 @@ a {
   }
 
   .intro {
-    width: 50%;
+    width: 60%;
+    /* margin-top: 2em; */
     background: url("./images/image-mockups.png"),
       url("./images/bg-intro-desktop.svg");
-    background-size: 35rem, 55rem;
-    background-position-y: -5rem, -13rem;
-    background-position-x: 4rem, -2rem;
+    background-size: 48rem, 80rem;
+    background-position-y: -13rem, -18rem;
+    background-position-x: 14rem, 0rem;
     background-repeat: no-repeat;
     float: right;
     height: 40em;
@@ -399,51 +426,99 @@ a {
   }
 
   .para1 {
+    background-color: rgb(250, 250, 250);
+    font-size: 1.2em;
     #heading {
       transform: translateX(0.5em);
     }
     #heading,
     #normal {
+      /* border: solid black; */
       text-align: left;
     }
+    #normal {
+      padding-left: 1.2em;
+    }
     width: 30%;
-    transform: translateX(4em) translateY(8em);
+    transform: translateX(3em) translateY(3em);
+    .invite {
+      position: fixed;
+      transform: translateX(1em);
+    }
   }
   .why {
     position: relative;
     z-index: 1;
     width: 96%;
-    transform: translateY(-40%);
+    transform: translateY(-30%);
     #normal {
+      text-align: left;
+      font-size: medium;
       transform: translateX(3%);
     }
     flex-wrap: nowrap;
     flex-direction: column;
     .one {
+      margin-left: 2em;
+      margin-right: 2em;
       width: 50%;
+      #heading {
+        text-align: left;
+        padding-left: 0.8em;
+      }
+      #normal {
+        padding-left: 1.4em;
+        padding-right: 8em;
+        color: gray;
+      }
     }
     .two {
+      z-index: 1;
+      padding-right: 3em;
+      #normal {
+        padding-left: 1.5em;
+        margin-bottom: 2em;
+        color: gray;
+      }
+      margin-left: 2em;
+      margin-right: 2em;
       display: flex;
       .online-banking,
       .simple-budgeting,
       .fast-onboarding,
       .open-api {
         .picture {
-          margin-left: 39%;
+          transform: translateX(10%);
+          /* margin-left: 2em; */
+          padding-left: 0;
+          border-left: 0;
+        }
+        .txt {
+          /* border: solid black; */
+          padding-top: 1em;
+          text-align: left;
+          padding-left: 1.7em;
+          /* padding-bottom: 1em; */
         }
       }
     }
   }
   .latest-articles {
+    /* border: solid; */
+    font-size: 0.9em;
     position: relative;
+
     #heading {
       position: absolute;
-      left: 1.3em;
-      top: 1em;
+      left: 2.2em;
+      top: 2em;
     }
     .flexone {
+      /* border: solid black; */
       display: flex;
-      transform: translateY(10%);
+      transform: translateY(20%);
+      margin-left: 2em;
+      margin-right: 6em;
     }
     .money,
     .restaurant,
@@ -452,7 +527,8 @@ a {
       margin-left: 0.5em;
       margin-right: 0.5em;
       .fig .article-image {
-        border-radius: 1.5em;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
       }
     }
     .txt :hover {
@@ -462,14 +538,19 @@ a {
   }
 
   .closing {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    font-size: 1em;
     flex-direction: row;
     justify-content: space-around;
     .outer-div-1 {
+      transform: translateX(-5em);
+
       text-align: left;
       width: 50%;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-around;
       .div1 {
         .logo {
           transform: translateY(20%);
@@ -480,8 +561,12 @@ a {
       }
     }
     .outer-div-2 {
+      .closing-statement,
+      .invitee {
+        transform: translateX(-23%);
+      }
       .closing-statement {
-        transform: translateX(-20%);
+        transform: translateX(-33%);
       }
       transform: translateY(10%);
     }
