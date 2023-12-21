@@ -515,6 +515,8 @@ a {
     }
   }
   .latest-articles {
+    margin-left: 2em;
+    margin-right: 3em;
     font-size: 0.9em;
     position: relative;
     #heading {
@@ -560,10 +562,10 @@ a {
       justify-content: space-around;
       .div1 {
         .logo {
-          transform: translateY(20%);
+          /* transform: translateY(10%); */
         }
         .social-media {
-          transform: translateY(90%);
+          transform: translateY(30%);
           div#facebook:hover {
             background-image: url("./images/icon-facebook-hover.svg");
           }
