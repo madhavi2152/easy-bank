@@ -101,7 +101,7 @@ a {
   background: url("./images/image-mockups.png"),
     url("./images/bg-intro-mobile.svg");
   background-size: 100%, 100%;
-  background-position-y: -10.5rem, -1rem;
+  background-position-y: -10.5rem, -4.5rem;
   background-repeat: no-repeat;
 }
 .invite {
@@ -431,7 +431,7 @@ a {
     background: url("./images/image-mockups.png"),
       url("./images/bg-intro-desktop.svg");
     background-size: 48rem, 80rem;
-    background-position-y: -13rem, -18rem;
+    background-position-y: -13rem, -24rem;
     background-position-x: 14rem, 0rem;
     background-repeat: no-repeat;
     float: right;
